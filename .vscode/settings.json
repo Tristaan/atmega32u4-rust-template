@@ -1,0 +1,4 @@
+{
+    "rust-analyzer.cargo.target": "specs/atmega32u4.json",
+    "rust-analyzer.checkOnSave.allTargets": false,
+}
