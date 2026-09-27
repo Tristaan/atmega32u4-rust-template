@@ -1,0 +1,11 @@
+[build]
+target = "specs/atmega32u4.json"
+rustflags = ["-C", "target-cpu=atmega32u4", "-C", "link-arg=-mmcu=atmega32u4" ]
+
+[target.'cfg(target_arch = "avr")']
+runner = "ravedude promicro"
+linker = "avr-gcc"
+
+[unstable]
+build-std = ["core"]
+json-target-spec = true
